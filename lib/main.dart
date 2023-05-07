@@ -1,5 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:fluttermenubar/Contact.dart';
+import 'package:fluttermenubar/Data.dart';
+import 'package:fluttermenubar/Download.dart';
+import 'package:fluttermenubar/ETS.dart';
+import 'package:fluttermenubar/Install.dart';
+import 'package:fluttermenubar/LPV.dart';
+import 'package:fluttermenubar/Master.dart';
+import 'package:fluttermenubar/Payroll.dart';
+import 'package:fluttermenubar/Second.dart';
+import 'package:fluttermenubar/Settlements.dart';
+import 'package:fluttermenubar/Support.dart';
+import 'package:fluttermenubar/Team.dart';
 
 void main() => runApp(const MenuAcceleratorApp());
 
@@ -30,20 +42,18 @@ class MyMenuBar extends StatelessWidget {
                       ),
                       MenuItemButton(
                         onPressed: () {
-                          ScaffoldMessenger.of(context).showSnackBar(
-                            const SnackBar(
-                              content: Text('SB Blogs!'),
-                            ),
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => Second()),
                           );
                         },
                         child: const MenuAcceleratorLabel('&Blog'),
                       ),
                       MenuItemButton(
                         onPressed: () {
-                          ScaffoldMessenger.of(context).showSnackBar(
-                            const SnackBar(
-                              content: Text('Visit shubhanshubb.com!'),
-                            ),
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => Contact()),
                           );
                         },
                         child: const MenuAcceleratorLabel('&Contact'),
@@ -55,20 +65,18 @@ class MyMenuBar extends StatelessWidget {
                     menuChildren: <Widget>[
                       MenuItemButton(
                         onPressed: () {
-                          ScaffoldMessenger.of(context).showSnackBar(
-                            const SnackBar(
-                              content: Text('Extract Files!'),
-                            ),
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => Data()),
                           );
                         },
                         child: const MenuAcceleratorLabel('&Extract Files'),
                       ),
                       MenuItemButton(
                         onPressed: () {
-                          ScaffoldMessenger.of(context).showSnackBar(
-                            const SnackBar(
-                              content: Text('Data Open'),
-                            ),
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => Data()),
                           );
                         },
                         child: const MenuAcceleratorLabel('Data'),
@@ -82,10 +90,9 @@ class MyMenuBar extends StatelessWidget {
                         menuChildren: <Widget>[
                           MenuItemButton(
                             onPressed: () {
-                              ScaffoldMessenger.of(context).showSnackBar(
-                                const SnackBar(
-                                  content: Text('ETS!'),
-                                ),
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => ETS()),
                               );
                             },
                             child: const MenuAcceleratorLabel(
@@ -93,10 +100,9 @@ class MyMenuBar extends StatelessWidget {
                           ),
                           MenuItemButton(
                             onPressed: () {
-                              ScaffoldMessenger.of(context).showSnackBar(
-                                const SnackBar(
-                                  content: Text('ETS!'),
-                                ),
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => ETS()),
                               );
                             },
                             child: const MenuAcceleratorLabel(
@@ -104,10 +110,9 @@ class MyMenuBar extends StatelessWidget {
                           ),
                           MenuItemButton(
                             onPressed: () {
-                              ScaffoldMessenger.of(context).showSnackBar(
-                                const SnackBar(
-                                  content: Text('ETS!'),
-                                ),
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => ETS()),
                               );
                             },
                             child:
@@ -115,10 +120,9 @@ class MyMenuBar extends StatelessWidget {
                           ),
                           MenuItemButton(
                             onPressed: () {
-                              ScaffoldMessenger.of(context).showSnackBar(
-                                const SnackBar(
-                                  content: Text('ETS!'),
-                                ),
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => ETS()),
                               );
                             },
                             child: const MenuAcceleratorLabel(
@@ -126,10 +130,9 @@ class MyMenuBar extends StatelessWidget {
                           ),
                           MenuItemButton(
                             onPressed: () {
-                              ScaffoldMessenger.of(context).showSnackBar(
-                                const SnackBar(
-                                  content: Text('ETS!'),
-                                ),
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => ETS()),
                               );
                             },
                             child: const MenuAcceleratorLabel(
@@ -142,20 +145,20 @@ class MyMenuBar extends StatelessWidget {
                         menuChildren: <Widget>[
                           MenuItemButton(
                             onPressed: () {
-                              ScaffoldMessenger.of(context).showSnackBar(
-                                const SnackBar(
-                                  content: Text('Payroll!'),
-                                ),
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => Payroll()),
                               );
                             },
                             child: const MenuAcceleratorLabel('Payroll 1'),
                           ),
                           MenuItemButton(
                             onPressed: () {
-                              ScaffoldMessenger.of(context).showSnackBar(
-                                const SnackBar(
-                                  content: Text('Payroll!'),
-                                ),
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => Payroll()),
                               );
                             },
                             child: const MenuAcceleratorLabel('Payroll 2'),
@@ -175,10 +178,9 @@ class MyMenuBar extends StatelessWidget {
                       ),
                       MenuItemButton(
                         onPressed: () {
-                          ScaffoldMessenger.of(context).showSnackBar(
-                            const SnackBar(
-                              content: Text(''),
-                            ),
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => LPV()),
                           );
                         },
                         child:
@@ -219,20 +221,20 @@ class MyMenuBar extends StatelessWidget {
                         menuChildren: <Widget>[
                           MenuItemButton(
                             onPressed: () {
-                              ScaffoldMessenger.of(context).showSnackBar(
-                                const SnackBar(
-                                  content: Text('Settlements!'),
-                                ),
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => Settlements()),
                               );
                             },
                             child: const MenuAcceleratorLabel('Settlements 1'),
                           ),
                           MenuItemButton(
                             onPressed: () {
-                              ScaffoldMessenger.of(context).showSnackBar(
-                                const SnackBar(
-                                  content: Text('Settlements!'),
-                                ),
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => Settlements()),
                               );
                             },
                             child: const MenuAcceleratorLabel('Settlements 2'),
@@ -402,20 +404,18 @@ class MyMenuBar extends StatelessWidget {
                     menuChildren: <Widget>[
                       MenuItemButton(
                         onPressed: () {
-                          ScaffoldMessenger.of(context).showSnackBar(
-                            const SnackBar(
-                              content: Text('FlipFlop!'),
-                            ),
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => Master()),
                           );
                         },
                         child: const MenuAcceleratorLabel('&FlipFlop'),
                       ),
                       MenuItemButton(
                         onPressed: () {
-                          ScaffoldMessenger.of(context).showSnackBar(
-                            const SnackBar(
-                              content: Text('Aestro Open'),
-                            ),
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => Master()),
                           );
                         },
                         child: const MenuAcceleratorLabel('Aestro'),
@@ -452,20 +452,18 @@ class MyMenuBar extends StatelessWidget {
                     menuChildren: <Widget>[
                       MenuItemButton(
                         onPressed: () {
-                          ScaffoldMessenger.of(context).showSnackBar(
-                            const SnackBar(
-                              content: Text('How to Install !'),
-                            ),
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => Install()),
                           );
                         },
                         child: const MenuAcceleratorLabel('&Install'),
                       ),
                       MenuItemButton(
                         onPressed: () {
-                          ScaffoldMessenger.of(context).showSnackBar(
-                            const SnackBar(
-                              content: Text('File Downloaded'),
-                            ),
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => Download()),
                           );
                         },
                         child: const MenuAcceleratorLabel('Download'),
@@ -527,20 +525,18 @@ class MyMenuBar extends StatelessWidget {
                     menuChildren: <Widget>[
                       MenuItemButton(
                         onPressed: () {
-                          ScaffoldMessenger.of(context).showSnackBar(
-                            const SnackBar(
-                              content: Text('Team!'),
-                            ),
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => Team()),
                           );
                         },
                         child: const MenuAcceleratorLabel('&Team'),
                       ),
                       MenuItemButton(
                         onPressed: () {
-                          ScaffoldMessenger.of(context).showSnackBar(
-                            const SnackBar(
-                              content: Text('Support'),
-                            ),
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => Support()),
                           );
                         },
                         child: const MenuAcceleratorLabel('Support'),

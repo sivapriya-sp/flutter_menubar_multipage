@@ -1,4 +1,4 @@
-name: flutterapplication1
+name: fluttermenubar
 description: A new Flutter project.
 
 publish_to: "none" # Remove this line if you wish to publish to pub.dev
@@ -25,3 +25,4 @@ flutter:
   uses-material-design: true
   assets:
     - assets/background.jpg
+    - assets/download.jpg
